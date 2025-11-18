@@ -2,8 +2,6 @@
     background-color: var(--white);
     color: white;
 }
-
-
 .close-button::before,
 .close-button::after {
     background: var(--black);
@@ -17,7 +15,6 @@
 .contact-form input::placeholder {
     color: #999ead;
 }
-
 
 
 .contact-form button {
