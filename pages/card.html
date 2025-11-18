@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Карточка</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/all.css" />
+  <link rel="stylesheet" href="../css/font.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/feedback.css" />
+  <link rel="stylesheet" href="../css/card.css" />
+  <script src="../script/slider.js"></script>
+  <script src="../script/registration.js"></script>
+  <script src="../script/geo.js"defer></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="overlay" id="overlay"></div>
+      <div class="header__top header__top--open">
+        <div class="header__top-inner">
+          <nav class="header__nav">
+            <button class="burger" id="burgerBtn">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link " href="#">Меню</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Каталог</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Обратная связь</a>
+              </li>
+              <li class="header__nav-item child">
+                <a class="header__nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__logo" href="#">
+            <img src="../img/logo.svg" alt="Logo" class="logo">
+          </a>
+          <div class="header__btn-box">
+            <a class="header__top-btn" href="#">Личный кабинет</a>
+            <div class="header__box-img"><img src="../img/human-purple.svg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-item" id="popupMenu">
+        <ul class="popup-nav">
+          <li class="popup-list"><a href="#" class="popup-link">Меню</a></li>
+          <li class="popup-list"><a href="#" class="popup-link">Каталог</a></li>
+          <li class="popup-list"><a href="#" class="popup-link">Обратная связь</a></li>
+          <li class="popup-list"><a href="#" class="popup-link">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="product-section">
+      <div class="product-gallery">
+        <div class="gallery-container">
+          <div class="main-image">
+            <img src="../img/reline.png" alt="reline" />
+          </div>
+          <div class="thumbnail-list">
+            <div class="thumbnail-item">
+              <svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M79.6667 13H21.3333C16.731 13 13 16.731 13 21.3333V79.6667C13 84.269 16.731 88 21.3333 88H79.6667C84.269 88 88 84.269 88 79.6667V21.3333C88 16.731 84.269 13 79.6667 13Z"
+                  stroke="#999EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M35.918 42.1667C39.3698 42.1667 42.168 39.3685 42.168 35.9167C42.168 32.4649 39.3698 29.6667 35.918 29.6667C32.4662 29.6667 29.668 32.4649 29.668 35.9167C29.668 39.3685 32.4662 42.1667 35.918 42.1667Z"
+                  stroke="#999EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M87.9987 63L67.1654 42.1667L21.332 88" stroke="#999EAD" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="thumbnail-item">
+              <svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M79.6667 13H21.3333C16.731 13 13 16.731 13 21.3333V79.6667C13 84.269 16.731 88 21.3333 88H79.6667C84.269 88 88 84.269 88 79.6667V21.3333C88 16.731 84.269 13 79.6667 13Z"
+                  stroke="#999EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M35.918 42.1667C39.3698 42.1667 42.168 39.3685 42.168 35.9167C42.168 32.4649 39.3698 29.6667 35.918 29.6667C32.4662 29.6667 29.668 32.4649 29.668 35.9167C29.668 39.3685 32.4662 42.1667 35.918 42.1667Z"
+                  stroke="#999EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M87.9987 63L67.1654 42.1667L21.332 88" stroke="#999EAD" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="thumbnail-item">
+              <svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M79.6667 13H21.3333C16.731 13 13 16.731 13 21.3333V79.6667C13 84.269 16.731 88 21.3333 88H79.6667C84.269 88 88 84.269 88 79.6667V21.3333C88 16.731 84.269 13 79.6667 13Z"
+                  stroke="#999EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M35.918 42.1667C39.3698 42.1667 42.168 39.3685 42.168 35.9167C42.168 32.4649 39.3698 29.6667 35.918 29.6667C32.4662 29.6667 29.668 32.4649 29.668 35.9167C29.668 39.3685 32.4662 42.1667 35.918 42.1667Z"
+                  stroke="#999EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M87.9987 63L67.1654 42.1667L21.332 88" stroke="#999EAD" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="thumbnail-item">
+              <svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M79.6667 13H21.3333C16.731 13 13 16.731 13 21.3333V79.6667C13 84.269 16.731 88 21.3333 88H79.6667C84.269 88 88 84.269 88 79.6667V21.3333C88 16.731 84.269 13 79.6667 13Z"
+                  stroke="#999EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M35.918 42.1667C39.3698 42.1667 42.168 39.3685 42.168 35.9167C42.168 32.4649 39.3698 29.6667 35.918 29.6667C32.4662 29.6667 29.668 32.4649 29.668 35.9167C29.668 39.3685 32.4662 42.1667 35.918 42.1667Z"
+                  stroke="#999EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M87.9987 63L67.1654 42.1667L21.332 88" stroke="#999EAD" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <h1>
+          Название
+          товара
+        </h1>
+        <div class="price-actions-container">
+          <div class="product-price">000.00 ₽</div>
+          <div class="product-actions">
+            <button>
+              Заказать
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.5 2L3.5 6V20C3.5 20.5304 3.71071 21.0391 4.08579 21.4142C4.46086 21.7893 4.96957 22 5.5 22H19.5C20.0304 22 20.5391 21.7893 20.9142 21.4142C21.2893 21.0391 21.5 20.5304 21.5 20V6L18.5 2H6.5Z"
+                  stroke="#F7F8FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3.5 6H21.5" stroke="#F7F8FA" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M16.5 10C16.5 11.0609 16.0786 12.0783 15.3284 12.8284C14.5783 13.5786 13.5609 14 12.5 14C11.4391 14 10.4217 13.5786 9.67157 12.8284C8.92143 12.0783 8.5 11.0609 8.5 10"
+                  stroke="#F7F8FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button>
+              Избранное
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.8382 4.60999C20.3274 4.099 19.721 3.69364 19.0535 3.41708C18.3861 3.14052 17.6707 2.99817 16.9482 2.99817C16.2257 2.99817 15.5103 3.14052 14.8428 3.41708C14.1754 3.69364 13.5689 4.099 13.0582 4.60999L11.9982 5.66999L10.9382 4.60999C9.90647 3.5783 8.5072 2.9987 7.04817 2.9987C5.58913 2.9987 4.18986 3.5783 3.15817 4.60999C2.12647 5.64169 1.54688 7.04096 1.54688 8.49999C1.54687 9.95903 2.12647 11.3583 3.15817 12.39L4.21817 13.45L11.9982 21.23L19.7782 13.45L20.8382 12.39C21.3492 11.8792 21.7545 11.2728 22.0311 10.6053C22.3076 9.93789 22.45 9.22248 22.45 8.49999C22.45 7.77751 22.3076 7.0621 22.0311 6.39464C21.7545 5.72718 21.3492 5.12075 20.8382 4.60999V4.60999Z"
+                  stroke="#CB72B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-description">
+          <p>
+            Описание – основной смысл. Используйте 3-5 предложений в несколько строчек при сохранении выравнивания.
+            Передайте основные сведения о товаре, полезные для ознакомления с ним покупателю.
+          </p>
+          <a class="order-button" href="#">Смотреть в Телеграм</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sections-container">
+      <div class="buy-section">
+        <div class="buy-header fl">
+          <h1>Купить</h1>
+        </div>
+        <div class="buy-options">
+          <div>
+            <div class="buy-header none">
+              <h1>Купить</h1>
+            </div>
+            <a href="#" class="buy-option">
+              Купить на Wildberries
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 5L19 12L12 19" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="buy-option">Купить на Ozon
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 5L19 12L12 19" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="buy-option">Заказать с помощью Telegram
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 5L19 12L12 19" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></a>
+
+            <div class="action-buttons">
+              <button class="order-button-c">
+                Консультация специалиста
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 5L19 12L12 19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="order-button-t partner-button">
+                Услуги партнёра
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="#CB72B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 5L19 12L12 19" stroke="#CB72B4" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+
+          <div class="info-card ">
+            <div>
+
+              <div class="info-item">
+                <p class="label">Артикул товара</p>
+                <div class="value">
+                  <span>0000000000</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z"
+                      stroke="#9A9DA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                      stroke="#9A9DA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="info-item">
+                <p class="label">Состав</p>
+                <p class="value">основные компоненты состава товара</p>
+              </div>
+              <div class="info-item">
+                <p class="label">Объём</p>
+                <p class="value">объём продукта (г/мл)</p>
+              </div>
+              <div class="info-item">
+                <p class="label">Применение</p>
+                <p class="value">краткое описание характеристики</p>
+              </div>
+              <div class="info-item">
+                <p class="label">Подходит для</p>
+                <p class="value">краткое описание характеристики</p>
+              </div>
+              <div class="info-item">
+                <p class="label">Изготовитель</p>
+                <p class="value">указание страны-изготовителя товара</p>
+              </div>
+
+              <button class="view-all-button">Смотреть все</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="reviews-section">
+      <h1 class="reviews-titles">Отзывы</h1>
+      <div class="review-grid-с">
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="../img/Avatar.svg" class="review-img">
+            </div>
+            <div class="review-author-info">
+              <div class="review-author">Фамилия Имя</div>
+              <div class="review-expertise">Знаток города или др.</div>
+            </div>
+          </div>
+          <div class="review-rating-row">
+            <div class="review-marks">
+              <svg width="111" height="16" viewBox="0 0 111 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.9987 1.33337L10.0587 5.50671L14.6654 6.18004L11.332 9.42671L12.1187 14.0134L7.9987 11.8467L3.8787 14.0134L4.66536 9.42671L1.33203 6.18004L5.9387 5.50671L7.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M31.9987 1.33337L34.0587 5.50671L38.6654 6.18004L35.332 9.42671L36.1187 14.0134L31.9987 11.8467L27.8787 14.0134L28.6654 9.42671L25.332 6.18004L29.9387 5.50671L31.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M55.5 1.33337L57.4312 5.50671L61.75 6.18004L58.625 9.42671L59.3625 14.0134L55.5 11.8467L51.6375 14.0134L52.375 9.42671L49.25 6.18004L53.5687 5.50671L55.5 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M78.9987 1.33337L81.0587 5.50671L85.6654 6.18004L82.332 9.42671L83.1187 14.0134L78.9987 11.8467L74.8787 14.0134L75.6654 9.42671L72.332 6.18004L76.9387 5.50671L78.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M102.999 1.33337L105.059 5.50671L109.665 6.18004L106.332 9.42671L107.119 14.0134L102.999 11.8467L98.8787 14.0134L99.6654 9.42671L96.332 6.18004L100.939 5.50671L102.999 1.33337Z"
+                  fill="#F5D140" />
+              </svg>
+            </div>
+            <div class="review-date">Дата написания отзыва</div>
+          </div>
+          <div class="review-text">
+            Отзыв клиента. Используйте<br />
+            1-2 предложения в 2–4 строчки, так как здесь используется<br />
+            выравнивание по левому краю. При большем количестве текста<br />
+            используйте другой тип выравнивания контента
+          </div>
+          <div class="review-likes">
+            <div class="like">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.41536 20.1667H3.66536C3.17913 20.1667 2.71282 19.9736 2.369 19.6297C2.02519 19.2859 1.83203 18.8196 1.83203 18.3334V11.9167C1.83203 11.4305 2.02519 10.9642 2.369 10.6203C2.71282 10.2765 3.17913 10.0834 3.66536 10.0834H6.41536M12.832 8.25004V4.58337C12.832 3.85403 12.5423 3.15456 12.0266 2.63883C11.5109 2.12311 10.8114 1.83337 10.082 1.83337L6.41536 10.0834V20.1667H16.7554C17.1975 20.1717 17.6265 20.0167 17.9634 19.7304C18.3003 19.444 18.5224 19.0455 18.5887 18.6084L19.8537 10.3584C19.8936 10.0956 19.8759 9.82733 19.8018 9.5721C19.7277 9.31688 19.599 9.08081 19.4246 8.88026C19.2502 8.67971 19.0343 8.51948 18.7918 8.41066C18.5493 8.30184 18.2861 8.24703 18.0204 8.25004H12.832Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>10</span>
+            </div>
+            <div class="dislike">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.5841 1.83334H18.0316C18.5504 1.82416 19.0545 2.0058 19.4482 2.34376C19.8419 2.68172 20.0979 3.15248 20.1674 3.66667V10.0833C20.0979 10.5975 19.8419 11.0683 19.4482 11.4063C19.0545 11.7442 18.5504 11.9258 18.0316 11.9167H15.5841M9.16743 13.75V17.4167C9.16743 18.146 9.45716 18.8455 9.97288 19.3612C10.4886 19.8769 11.1881 20.1667 11.9174 20.1667L15.5841 11.9167V1.83334H5.24409C4.80196 1.82834 4.37291 1.9833 4.03601 2.26967C3.69911 2.55603 3.47706 2.95451 3.41076 3.39167L2.14576 11.6417C2.10588 11.9044 2.1236 12.1727 2.1977 12.4279C2.2718 12.6832 2.4005 12.9192 2.57489 13.1198C2.74928 13.3203 2.96519 13.4806 3.20765 13.5894C3.45012 13.6982 3.71334 13.753 3.97909 13.75H9.16743Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>10</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="../img/Avatar.svg" class="review-img">
+            </div>
+            <div class="review-author-info">
+              <div class="review-author">Фамилия Имя</div>
+              <div class="review-expertise">Знаток города или др.</div>
+            </div>
+          </div>
+          <div class="review-rating-row">
+            <div class="review-marks">
+              <svg width="111" height="16" viewBox="0 0 111 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.9987 1.33337L10.0587 5.50671L14.6654 6.18004L11.332 9.42671L12.1187 14.0134L7.9987 11.8467L3.8787 14.0134L4.66536 9.42671L1.33203 6.18004L5.9387 5.50671L7.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M31.9987 1.33337L34.0587 5.50671L38.6654 6.18004L35.332 9.42671L36.1187 14.0134L31.9987 11.8467L27.8787 14.0134L28.6654 9.42671L25.332 6.18004L29.9387 5.50671L31.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M55.5 1.33337L57.4312 5.50671L61.75 6.18004L58.625 9.42671L59.3625 14.0134L55.5 11.8467L51.6375 14.0134L52.375 9.42671L49.25 6.18004L53.5687 5.50671L55.5 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M78.9987 1.33337L81.0587 5.50671L85.6654 6.18004L82.332 9.42671L83.1187 14.0134L78.9987 11.8467L74.8787 14.0134L75.6654 9.42671L72.332 6.18004L76.9387 5.50671L78.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M102.999 1.33337L105.059 5.50671L109.665 6.18004L106.332 9.42671L107.119 14.0134L102.999 11.8467L98.8787 14.0134L99.6654 9.42671L96.332 6.18004L100.939 5.50671L102.999 1.33337Z"
+                  fill="#F5D140" />
+              </svg>
+            </div>
+            <div class="review-date">Дата написания отзыва</div>
+          </div>
+          <div class="review-text">
+            Отзыв клиента. Используйте<br />
+            1-2 предложения в 2–4 строчки, так как здесь используется<br />
+            выравнивание по левому краю. При большем количестве текста<br />
+            используйте другой тип выравнивания контента
+          </div>
+          <div class="review-likes">
+            <div class="like">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.41536 20.1667H3.66536C3.17913 20.1667 2.71282 19.9736 2.369 19.6297C2.02519 19.2859 1.83203 18.8196 1.83203 18.3334V11.9167C1.83203 11.4305 2.02519 10.9642 2.369 10.6203C2.71282 10.2765 3.17913 10.0834 3.66536 10.0834H6.41536M12.832 8.25004V4.58337C12.832 3.85403 12.5423 3.15456 12.0266 2.63883C11.5109 2.12311 10.8114 1.83337 10.082 1.83337L6.41536 10.0834V20.1667H16.7554C17.1975 20.1717 17.6265 20.0167 17.9634 19.7304C18.3003 19.444 18.5224 19.0455 18.5887 18.6084L19.8537 10.3584C19.8936 10.0956 19.8759 9.82733 19.8018 9.5721C19.7277 9.31688 19.599 9.08081 19.4246 8.88026C19.2502 8.67971 19.0343 8.51948 18.7918 8.41066C18.5493 8.30184 18.2861 8.24703 18.0204 8.25004H12.832Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>10</span>
+            </div>
+            <div class="dislike">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.5841 1.83334H18.0316C18.5504 1.82416 19.0545 2.0058 19.4482 2.34376C19.8419 2.68172 20.0979 3.15248 20.1674 3.66667V10.0833C20.0979 10.5975 19.8419 11.0683 19.4482 11.4063C19.0545 11.7442 18.5504 11.9258 18.0316 11.9167H15.5841M9.16743 13.75V17.4167C9.16743 18.146 9.45716 18.8455 9.97288 19.3612C10.4886 19.8769 11.1881 20.1667 11.9174 20.1667L15.5841 11.9167V1.83334H5.24409C4.80196 1.82834 4.37291 1.9833 4.03601 2.26967C3.69911 2.55603 3.47706 2.95451 3.41076 3.39167L2.14576 11.6417C2.10588 11.9044 2.1236 12.1727 2.1977 12.4279C2.2718 12.6832 2.4005 12.9192 2.57489 13.1198C2.74928 13.3203 2.96519 13.4806 3.20765 13.5894C3.45012 13.6982 3.71334 13.753 3.97909 13.75H9.16743Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>10</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="../img/Avatar.svg" class="review-img">
+            </div>
+            <div class="review-author-info">
+              <div class="review-author">Фамилия Имя</div>
+              <div class="review-expertise">Знаток города или др.</div>
+            </div>
+          </div>
+          <div class="review-rating-row">
+            <div class="review-marks">
+              <svg width="111" height="16" viewBox="0 0 111 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.9987 1.33337L10.0587 5.50671L14.6654 6.18004L11.332 9.42671L12.1187 14.0134L7.9987 11.8467L3.8787 14.0134L4.66536 9.42671L1.33203 6.18004L5.9387 5.50671L7.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M31.9987 1.33337L34.0587 5.50671L38.6654 6.18004L35.332 9.42671L36.1187 14.0134L31.9987 11.8467L27.8787 14.0134L28.6654 9.42671L25.332 6.18004L29.9387 5.50671L31.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M55.5 1.33337L57.4312 5.50671L61.75 6.18004L58.625 9.42671L59.3625 14.0134L55.5 11.8467L51.6375 14.0134L52.375 9.42671L49.25 6.18004L53.5687 5.50671L55.5 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M78.9987 1.33337L81.0587 5.50671L85.6654 6.18004L82.332 9.42671L83.1187 14.0134L78.9987 11.8467L74.8787 14.0134L75.6654 9.42671L72.332 6.18004L76.9387 5.50671L78.9987 1.33337Z"
+                  fill="#F5D140" />
+                <path
+                  d="M102.999 1.33337L105.059 5.50671L109.665 6.18004L106.332 9.42671L107.119 14.0134L102.999 11.8467L98.8787 14.0134L99.6654 9.42671L96.332 6.18004L100.939 5.50671L102.999 1.33337Z"
+                  fill="#F5D140" />
+              </svg>
+            </div>
+            <div class="review-date">Дата написания отзыва</div>
+          </div>
+          <div class="review-text">
+            Отзыв клиента. Используйте<br />
+            1-2 предложения в 2–4 строчки, так как здесь используется<br />
+            выравнивание по левому краю. При большем количестве текста<br />
+            используйте другой тип выравнивания контента
+          </div>
+          <div class="review-likes">
+            <div class="like">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.41536 20.1667H3.66536C3.17913 20.1667 2.71282 19.9736 2.369 19.6297C2.02519 19.2859 1.83203 18.8196 1.83203 18.3334V11.9167C1.83203 11.4305 2.02519 10.9642 2.369 10.6203C2.71282 10.2765 3.17913 10.0834 3.66536 10.0834H6.41536M12.832 8.25004V4.58337C12.832 3.85403 12.5423 3.15456 12.0266 2.63883C11.5109 2.12311 10.8114 1.83337 10.082 1.83337L6.41536 10.0834V20.1667H16.7554C17.1975 20.1717 17.6265 20.0167 17.9634 19.7304C18.3003 19.444 18.5224 19.0455 18.5887 18.6084L19.8537 10.3584C19.8936 10.0956 19.8759 9.82733 19.8018 9.5721C19.7277 9.31688 19.599 9.08081 19.4246 8.88026C19.2502 8.67971 19.0343 8.51948 18.7918 8.41066C18.5493 8.30184 18.2861 8.24703 18.0204 8.25004H12.832Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>10</span>
+            </div>
+            <div class="dislike">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.5841 1.83334H18.0316C18.5504 1.82416 19.0545 2.0058 19.4482 2.34376C19.8419 2.68172 20.0979 3.15248 20.1674 3.66667V10.0833C20.0979 10.5975 19.8419 11.0683 19.4482 11.4063C19.0545 11.7442 18.5504 11.9258 18.0316 11.9167H15.5841M9.16743 13.75V17.4167C9.16743 18.146 9.45716 18.8455 9.97288 19.3612C10.4886 19.8769 11.1881 20.1667 11.9174 20.1667L15.5841 11.9167V1.83334H5.24409C4.80196 1.82834 4.37291 1.9833 4.03601 2.26967C3.69911 2.55603 3.47706 2.95451 3.41076 3.39167L2.14576 11.6417C2.10588 11.9044 2.1236 12.1727 2.1977 12.4279C2.2718 12.6832 2.4005 12.9192 2.57489 13.1198C2.74928 13.3203 2.96519 13.4806 3.20765 13.5894C3.45012 13.6982 3.71334 13.753 3.97909 13.75H9.16743Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="view-all-button">Смотреть все отзывы</button>
+    </div>
+
+
+
+
+
+    <div class="more-order-sections">
+      <h1>С этим товаром часто заказывают</h1>
+      <section class="slider-section">
+        <div class="slider-container">
+          <button class="prev-arrow" aria-label="Предыдущие товары">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none">
+              <path d="M26.125 16.5H6.875" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M16.5 6.875L6.875 16.5L16.5 26.125" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="slider-track">
+            <div class="slider">
+              <a class="product-card" href="#">
+                <div class="product-image-container">
+                  <img src="../img/reline.png" alt="Увлажняющая сыворотка">
+                </div>
+                <div class="product-details">
+                  <h3>Увлажняющая сыворотка</h3>
+                  <p>Интенсивное увлажнение кожи</p>
+                </div>
+              </a>
+              <a class="product-card" href="#">
+                <div class="product-image-container">
+                  <img src="../img/reline2.png" alt="Крем для лица">
+                </div>
+                <div class="product-details">
+                  <h3>Крем для лица</h3>
+                  <p>Для ежедневного ухода</p>
+                </div>
+              </a>
+              <a class="product-card" href="#">
+                <div class="product-image-container">
+                  <img src="../img/reline3.png" alt="Тоник с экстрактом алоэ">
+                </div>
+                <div class="product-details">
+                  <h3>Тоник с экстрактом алоэ</h3>
+                  <p>Успокаивает и тонизирует</p>
+                </div>
+              </a>
+              <a class="product-card" href="#">
+                <div class="product-image-container">
+                  <img src="../img/reline.png" alt="Гидрофильное масло">
+                </div>
+                <div class="product-details">
+                  <h3>Гидрофильное масло</h3>
+                  <p>Мягкое очищение без стянутости</p>
+                </div>
+              </a>
+              <a class="product-card" href="#">
+                <div class="product-image-container">
+                  <img src="../img/reline2.png" alt="Пенка для умывания">
+                </div>
+                <div class="product-details">
+                  <h3>Пенка для умывания</h3>
+                  <p>Для жирной и комбинированной кожи</p>
+                </div>
+              </a>
+              <a class="product-card" href="#">
+                <div class="product-image-container">
+                  <img src="../img/reline3.png" alt="Крем для глаз">
+                </div>
+                <div class="product-details">
+                  <h3>Крем для глаз</h3>
+                  <p>Уменьшает отёки и тёмные круги</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <button class="next-arrow" aria-label="Следующие товары">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none">
+              <path d="M6.875 16.5H26.125" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M16.5 6.875L26.125 16.5L16.5 26.125" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <div class="center">
+        <button class="view-all-button">Смотреть больше</button>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="specialists-section">
+      <h1>Специалисты говорят</h1>
+      <div class="widgets-container">
+        <img src="../img/widget.png" alt="widget">
+        <img src="../img/widget.png" alt="widget">
+        <img src="../img/widget.png" alt="widget">
+      </div>
+      <div class="center">
+        <button class="view-all-button">Смотреть больше</button>
+      </div>
+    </div>
+
+    <footer class="footer-head">
+      <div class="container">
+
+
+        <div class="center">
+          <div class="form-title">Мы всегда на связи
+            и готовы ответить на Ваши вопросы!</div>
+        </div>
+        <div class="center">
+ <button class="footer-button" data-modal-open>Задать вопрос</button>
+        </div>
+
+
+
+        <hr class="footer-line">
+        <nav class="footer-nav ">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="header__nav-link " href="#">О компании</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#"> Каталог</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#"> Сотрудничество</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">Обратная связь</a>
+            </li>
+            <li class="footer-nav-item ">
+              <a class="footer-nav-link" href="#">Контакты</a>
+            </li>
+
+          </ul>
+
+          <a class="social" href="#">
+            <img src="../img/tg-purple.svg" class="telegramm">
+          </a>
+          <a class="social" href="#">
+            <img src="../img/Vk-purple.svg" class="vk">
+          </a>
+        </nav>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-header-title">Свяжемся с Вами!</h2>
+        <button class="close-button"data-modal-close></button>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Имя" class="contact-input" required>
+        <input type="text" placeholder="Фамилия" class="contact-input" required>
+        <input type="tel" placeholder="Телефон" class="contact-input" required>
+        <input type="email" placeholder="E-mail" class="contact-input" required>
+        <button type="submit">Отправить</button>
+        <div class="checkbox-container">
+          <label class="checkbox-label">
+            <input type="checkbox" required>
+            <span class="checkbox-text">
+              Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с
+              Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
+              определенных в Согласии на обработку персональных данных
+            </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="modal-с" id="1">
+    <div class="modal-header-с">
+      <h2 class="modal-header-title-с">Войти в личный кабинет</h2>
+      <button class="close-button-с"></button>
+    </div>
+    <form class="contact-form-с">
+      <input type="tel" placeholder="Телефон" class="contact-input-с" required>
+      <div class="input-title">Позвоним или отправим код. Введите код из смс или последние 4 цифры номера телефона, с
+        которого поступит звонок</div>
+      <button type="submit" class="contact-form-black">Получить код</button>
+      <button type="submit" class="contact-form-b">Зарегистрироваться</button>
+    </form>
+  </div>
+
+  <div class="modal-с" id="2">
+    <div class="modal-header-с">
+      <h2 class="modal-header-title-с">Введите код подтверждения</h2>
+      <button class="close-button-с"></button>
+    </div>
+    <form class="contact-form-с">
+      <input type="tel" placeholder="XXXX" class="contact-input-с" required>
+      <button type="submit" class="contact-form-black">Войти</button>
+    </form>
+  </div>
+  <div class="modal-с" id="3">
+    <div class="modal-header-с">
+      <h2 class="modal-header-title-с">Введите код подтверждения</h2>
+      <button class="close-button-с"></button>
+    </div>
+    <form class="contact-form-с">
+      <input type="tel" placeholder="XXXX" class="contact-input-с" required>
+      <div class="input-title">Позвоним или отправим код. Введите код из смс или последние 4 цифры номера телефона, с
+        которого поступит звонок</div>
+      <button type="submit" class="contact-form-black">Создать аккаунт</button>
+    </form>
+  </div>
+
+  <div class="modal-с" id="4">
+    <div class="modal-header-с">
+      <h2 class="modal-header-title-с">Регистрация</h2>
+      <button class="close-button-с"></button>
+    </div>
+    <form class="contact-form-с">
+      <input type="text" placeholder="Имя" class="contact-input-с" required>
+      <input type="tel" placeholder="Телефон" class="contact-input-с" required>
+      <input type="email" placeholder="E-mail" class="contact-input-с" required>
+      <input type="text" placeholder="Дата рождения (дд/мм/гг)" class="contact-input-с" required>
+      <div class="checkbox-container-с">
+        <label class="checkbox-label-c">
+          <input type="checkbox" class="checkbox-purple" required>
+          <span class="checkbox-text-c">
+            Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с
+            Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
+            определенных в Соглашении на обработку персональных данных.
+          </span>
+        </label>
+      </div>
+      <button type="submit" class="contact-form-black" id="contact-form-top">Продолжить</button>
+    </form>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

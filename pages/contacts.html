@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/all.css" />
+  <link rel="stylesheet" href="../css/font.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/contacts.css" />
+ 
+  <script src="../script/geo.js"defer></script>
+  <script src="../script/registration.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="overlay" id="overlay"></div>
+      <div class="header__top header__top--open">
+        <div class="header__top-inner">
+          <nav class="header__nav">
+            <button class="burger" id="burgerBtn">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+             <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link " href="head.html">Меню</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="light.html">Каталог</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link"   href="feedback.html">Обратная связь</a>
+              </li>
+              <li class="header__nav-item child">
+                <a class="header__nav-link"   id="white"  href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <a class="header__logo" href="#">
+              <img src="../img/logo.svg" alt="Logo" class="logo" />
+            </a>
+          </nav>
+          <div class="header__btn-box">
+            <a class="header__top-btn" href="#">Личный кабинет</a>
+            <div class="header__box-img"><img src="../img/human.svg" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-item" id="popupMenu">
+        <ul class="popup-nav">
+            <ul class="popup-nav">
+          <li class="popup-list"><a href="head.html" class="popup-link">Меню</a></li>
+          <li class="popup-list"><a href="light.html" class="popup-link">Каталог</a></li>
+          <li class="popup-list"><a href="feedback.html" class="popup-link">Обратная связь</a></li>
+          <li class="popup-list"><a href="contacts.html" class="popup-link">Контакты</a></li>
+        </ul>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="contacts-body">
+          <div class="header-body-wrap">
+            <div class="header-wrap">
+              <h1 class="head-title">Контакты</h1>
+              <div class="contact-wrap">
+                <h5 class="contact-subtitle">
+                  По возникшим вопросам вы можете <br />
+                  обратиться к нашим сотрудникам.
+                </h5>
+                <p class="contact-sub">
+                  Описание – основной смысл. Используйте 1-2 предложения в 1-3 строчки, если выравнивание по центру. При
+                  большем количестве текста используйте другой тип выравнивания контента
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-body-wrap contacts-info">
+          <div class="contacts-info-item">
+            <div class="contacts-info-title">
+              <svg class="contacts-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.8133 6.25C20.0342 6.48821 21.1563 7.08532 22.0359 7.96492C22.9155 8.84452 23.5126 9.96658 23.7508 11.1875M18.8133 1.25C21.3499 1.5318 23.7153 2.66772 25.5211 4.47126C27.3269 6.2748 28.4658 8.63876 28.7508 11.175M27.5008 21.15V24.9C27.5022 25.2481 27.4309 25.5927 27.2914 25.9117C27.1519 26.2307 26.9474 26.517 26.6909 26.7523C26.4343 26.9877 26.1315 27.1669 25.8017 27.2784C25.4719 27.3899 25.1225 27.4313 24.7758 27.4C20.9293 26.9821 17.2345 25.6677 13.9883 23.5625C10.9681 21.6433 8.40744 19.0827 6.48827 16.0625C4.37574 12.8015 3.06107 9.08874 2.65077 5.225C2.61953 4.87933 2.66061 4.53095 2.7714 4.20203C2.88218 3.87311 3.06023 3.57086 3.29423 3.31453C3.52822 3.05819 3.81303 2.85339 4.13051 2.71315C4.44799 2.57292 4.7912 2.50033 5.13827 2.5H8.88827C9.4949 2.49403 10.083 2.70885 10.543 3.10442C11.0029 3.49998 11.3034 4.04931 11.3883 4.65C11.5465 5.85008 11.8401 7.02841 12.2633 8.1625C12.4315 8.6099 12.4678 9.09614 12.3682 9.5636C12.2685 10.0311 12.0368 10.4601 11.7008 10.8L10.1133 12.3875C11.8927 15.5169 14.4838 18.1081 17.6133 19.8875L19.2008 18.3C19.5406 17.9639 19.9697 17.7323 20.4372 17.6326C20.9046 17.5329 21.3909 17.5693 21.8383 17.7375C22.9724 18.1607 24.1507 18.4542 25.3508 18.6125C25.958 18.6982 26.5125 19.004 26.9089 19.4719C27.3054 19.9397 27.516 20.537 27.5008 21.15Z"
+                  stroke="#4F70C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              +7 (XXX) XXX-XX-XX
+            </div>
+            <div class="contacts-info-desc">Описание в 1-2 строчки</div>
+          </div>
+
+          <div class="contacts-info-item">
+            <div class="contacts-info-title">
+              <svg class="contacts-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5Z"
+                  stroke="#4F70C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M27.5 7.5L15 16.25L2.5 7.5" stroke="#4F70C1" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              e-mail adress
+            </div>
+            <div class="contacts-info-desc">Описание в 1-2 строчки</div>
+          </div>
+
+          <div class="contacts-info-item">
+            <div class="contacts-info-title">
+              <svg class="contacts-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 3C8.376 3 3 8.376 3 15C3 21.624 8.376 27 15 27C21.624 27 27 21.624 27 15C27 8.376 21.624 3 15 3ZM20.568 11.16C20.388 13.056 19.608 17.664 19.212 19.788C19.044 20.688 18.708 20.988 18.396 21.024C17.7 21.084 17.172 20.568 16.5 20.124C15.444 19.428 14.844 18.996 13.824 18.324C12.636 17.544 13.404 17.112 14.088 16.416C14.268 16.236 17.34 13.44 17.4 13.188C17.4083 13.1498 17.4072 13.1102 17.3968 13.0726C17.3863 13.0349 17.3668 13.0004 17.34 12.972C17.268 12.912 17.172 12.936 17.088 12.948C16.98 12.972 15.3 14.088 12.024 16.296C11.544 16.62 11.112 16.788 10.728 16.776C10.296 16.764 9.48 16.536 8.868 16.332C8.112 16.092 7.524 15.96 7.572 15.54C7.596 15.324 7.896 15.108 8.46 14.88C11.964 13.356 14.292 12.348 15.456 11.868C18.792 10.476 19.476 10.236 19.932 10.236C20.028 10.236 20.256 10.26 20.4 10.38C20.52 10.476 20.556 10.608 20.568 10.704C20.556 10.776 20.58 10.992 20.568 11.16Z"
+                  fill="#4F70C1" />
+              </svg>
+              тг-бот (активная ссылка)
+            </div>
+            <div class="contacts-info-desc">Описание в 1-2 строчки</div>
+          </div>
+
+          <div class="contacts-info-item">
+            <div class="contacts-info-title">
+              <svg class="contacts-icon" width="30" height="29" viewBox="0 0 30 29" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 2.99994C8.3725 2.99994 3 8.37244 3 14.9999C3 21.6274 8.3725 26.9999 15 26.9999C21.6275 26.9999 27 21.6274 27 14.9999C27 8.37244 21.6275 2.99994 15 2.99994ZM19.615 16.5387C19.615 16.5387 20.6763 17.5862 20.9375 18.0724C20.945 18.0824 20.9487 18.0924 20.9513 18.0974C21.0575 18.2762 21.0825 18.4149 21.03 18.5187C20.9425 18.6912 20.6425 18.7762 20.54 18.7837H18.665C18.535 18.7837 18.2625 18.7499 17.9325 18.5224C17.6788 18.3449 17.4288 18.0537 17.185 17.7699C16.8213 17.3474 16.5063 16.9824 16.1888 16.9824C16.1484 16.9824 16.1083 16.9887 16.07 17.0012C15.83 17.0787 15.5225 17.4212 15.5225 18.3337C15.5225 18.6187 15.2975 18.7824 15.1388 18.7824H14.28C13.9875 18.7824 12.4637 18.6799 11.1137 17.2562C9.46125 15.5124 7.97375 12.0149 7.96125 11.9824C7.8675 11.7562 8.06125 11.6349 8.2725 11.6349H10.1662C10.4187 11.6349 10.5012 11.7887 10.5588 11.9249C10.6262 12.0837 10.8738 12.7149 11.28 13.4249C11.9388 14.5824 12.3425 15.0524 12.6663 15.0524C12.727 15.0517 12.7866 15.0363 12.84 15.0074C13.2625 14.7724 13.1838 13.2662 13.165 12.9537C13.165 12.8949 13.1637 12.2799 12.9475 11.9849C12.7925 11.7712 12.5287 11.6899 12.3687 11.6599C12.4335 11.5706 12.5188 11.4981 12.6175 11.4487C12.9075 11.3037 13.43 11.2824 13.9488 11.2824H14.2375C14.8 11.2899 14.945 11.3262 15.1488 11.3774C15.5613 11.4762 15.57 11.7424 15.5338 12.6537C15.5225 12.9124 15.5113 13.2049 15.5113 13.5499C15.5113 13.6249 15.5075 13.7049 15.5075 13.7899C15.495 14.2537 15.48 14.7799 15.8075 14.9962C15.8502 15.023 15.8996 15.0373 15.95 15.0374C16.0638 15.0374 16.4062 15.0374 17.3337 13.4462C17.6198 12.934 17.8684 12.4018 18.0775 11.8537C18.0963 11.8212 18.1513 11.7212 18.2163 11.6824C18.2642 11.658 18.3174 11.6455 18.3713 11.6462H20.5975C20.84 11.6462 21.0063 11.6824 21.0375 11.7762C21.0925 11.9249 21.0275 12.3787 20.0112 13.7549L19.5575 14.3537C18.6363 15.5612 18.6363 15.6224 19.615 16.5387Z"
+                  fill="#4F70C1" />
+              </svg>
+              VK (активная ссылка)
+            </div>
+            <div class="contacts-info-desc">Описание в 1-2 строчки</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer-head footer-top">
+      <div class="container">
+        <div class="center">
+          <div class="form-title">Мы всегда на связи
+            и готовы ответить на Ваши вопросы!</div>
+        </div>
+        <div class="center">
+  <button class="footer-button" data-modal-open>Задать вопрос</button>
+        </div>
+        <hr class="footer-line">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="header__nav-link" href="#">О компании</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#"> Каталог</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#"> Сотрудничество</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">Обратная связь</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="social" href="#">
+            <img src="../img/teleg.svg" class="telegramm">
+          </a>
+          <a class="social" href="#">
+            <img src="../img/vk.svg" class="vk">
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+
+
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-header-title">Свяжемся с Вами!</h2>
+        <button class="close-button"data-modal-close></button>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Имя" class="contact-input" required>
+        <input type="text" placeholder="Фамилия" class="contact-input" required>
+        <input type="tel" placeholder="Телефон" class="contact-input" required>
+        <input type="email" placeholder="E-mail" class="contact-input" required>
+        <button type="submit">Отправить</button>
+        <div class="checkbox-container">
+          <label class="checkbox-label">
+            <input type="checkbox" required>
+            <span class="checkbox-text">
+              Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с
+              Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
+              определенных в Соглашении на обработку персональных данных.
+            </span>
+          </label>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+  </div>
+
+  <div class="modal-с" id="1">
+    <div class="modal-header-с">
+      <h2 class="modal-header-title-с">Войти в личный кабинет</h2>
+      <button class="close-button-с"></button>
+    </div>
+    <form class="contact-form-с">
+      <input type="tel" placeholder="Телефон" class="contact-input-с" required>
+      <div class="input-title">Позвоним или отправим код. Введите код из смс или последние 4 цифры номера телефона, с
+        которого поступит звонок</div>
+      <button type="submit" class="contact-form-black">Получить код</button>
+      <button type="submit" class="contact-form-b">Зарегистрироваться</button>
+    </form>
+  </div>
+
+  <div class="modal-с" id="2">
+    <div class="modal-header-с">
+      <h2 class="modal-header-title-с">Введите код подтверждения</h2>
+      <button class="close-button-с"></button>
+    </div>
+    <form class="contact-form-с">
+      <input type="tel" placeholder="XXXX" class="contact-input-с" required>
+      <button type="submit" class="contact-form-black">Войти</button>
+    </form>
+  </div>
+  <div class="modal-с" id="3">
+    <div class="modal-header-с">
+      <h2 class="modal-header-title-с">Введите код подтверждения</h2>
+      <button class="close-button-с"></button>
+    </div>
+    <form class="contact-form-с">
+      <input type="tel" placeholder="XXXX" class="contact-input-с" required>
+      <div class="input-title">Позвоним или отправим код. Введите код из смс или последние 4 цифры номера телефона, с
+        которого поступит звонок</div>
+      <button type="submit" class="contact-form-black">Создать аккаунт</button>
+    </form>
+  </div>
+
+  <div class="modal-с" id="4">
+    <div class="modal-header-с">
+      <h2 class="modal-header-title-с">Регистрация</h2>
+      <button class="close-button-с"></button>
+    </div>
+    <form class="contact-form-с">
+      <input type="text" placeholder="Имя" class="contact-input-с" required>
+      <input type="tel" placeholder="Телефон" class="contact-input-с" required>
+      <input type="email" placeholder="E-mail" class="contact-input-с" required>
+      <input type="text" placeholder="Дата рождения (дд/мм/гг)" class="contact-input-с" required>
+      <div class="checkbox-container-с">
+        <label class="checkbox-label-c">
+          <input type="checkbox" class="checkbox-purple" required>
+          <span class="checkbox-text-c">
+            Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с
+            Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
+            определенных в Соглашении на обработку персональных данных.
+          </span>
+        </label>
+      </div>
+      <button type="submit" class="contact-form-black" id="contact-form-top">Продолжить</button>
+    </form>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

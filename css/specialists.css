@@ -1,0 +1,155 @@
+
+
+
+.special-item {
+padding: 20px 42px 22px 27px ;
+ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: #f7f8fa;
+border-radius: 10px;
+min-width: 488px;
+max-width: 590px;
+}
+.special-item-head {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 24px;
+
+}
+
+.special{
+    display: flex;
+}
+
+.special-wrap {
+        align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.special-img {
+    margin-bottom: 22px;
+    width: 183px;
+height: 183px;
+    border-radius: 50%;
+}
+
+.special-btn {
+    border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 208px;
+font-weight: 700;
+font-size: .8rem;
+line-height: 167%;
+height: 44px;
+background: var(--black);
+color: var(--white);
+}
+
+.special-btn {
+        position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+
+}
+
+
+
+.special-btn {
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.15),
+        0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.special-btn:hover {
+    transform: scale(.98);
+}
+
+.special-btn:active {
+    transform: translateY(1px) scale(0.985);
+    box-shadow: 
+        0 1px 2px rgba(0, 0, 0, 0.15),
+        inset 0 0 8px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.1s;
+}
+
+
+
+.special-flex{
+    margin-bottom: 60px;
+    display: flex;
+    gap: 60px;
+}
+.special-item-wrap{
+    margin-left: 50px;
+}
+.special-item-head{
+    font-weight: 700;
+font-size: 1.3rem;
+line-height: 125%;
+margin-bottom: 24px;
+}
+.special-item-title{
+        font-weight: 700;
+font-size: 1rem;
+line-height: 125%;
+margin-bottom: 13px;
+}
+.special-item-adds{
+    font-weight: 400;
+font-size: 1rem;
+margin-bottom: 14px;
+line-height: 125%;
+color: var(--black);
+}
+.special-title-rating{
+    margin-right: 25px;
+    font-weight: 400;
+font-size: 1rem;
+line-height: 125%;
+margin-bottom: 14px;
+color: var(--black);
+}
+.special-item-subtitle {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.block{
+    display: none;
+}
+
+@media (max-width: 1150px) {
+.special-flex{
+    flex-direction: column;
+        align-items: center;
+}
+}
+@media (max-width: 560px) {
+.special-item-wrap{
+    margin-left: 0;
+}
+.block{
+    display: flex;
+}
+.none{
+    display: none;
+}
+.special{
+ flex-direction: column;
+}
+.special-btn{
+    margin-top: 31px;
+}
+}
+@media (max-width: 520px) {
+.special-item{
+        min-width: 302px;
+    max-width: 302px;
+        padding: 20px 10px 22px 27px;
+}
+.special-item-head{
+    font-size: 1rem;
+}
+}

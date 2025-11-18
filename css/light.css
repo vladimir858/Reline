@@ -1,0 +1,104 @@
+.modal {
+    background-color: var(--white);
+    color: white;
+}
+
+
+.close-button::before,
+.close-button::after {
+    background: var(--black);
+}
+
+
+.contact-input {
+    border: 3px solid var(--teal);
+    color: #999ead;
+}
+
+.contact-form input::placeholder {
+    color: #999ead;
+}
+
+
+
+
+.contact-form button {
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--teal);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: var(--teal);
+}
+
+
+.checkbox-label {
+    color: var(--teal);
+}
+
+.checkbox-label input[type="checkbox"] {
+    border: 1.5px solid var(--teal);
+}
+
+.checkbox-label input[type="checkbox"]:checked::after {
+    color: var(--teal);
+}
+
+
+
+.footer-line {
+    background: var(--teal);
+    transition: .2s;
+}
+
+
+.header__btn-box:hover {
+    outline: 3px solid var(--teal);
+}
+
+.header__btn-box:active {
+    outline: 3px solid var(--teal);
+}
+
+.header__btn-box {
+    outline: solid var(--teal) 2px;
+}
+
+.header__top-btn {
+    color: var(--teal);
+}
+
+.burger__line {
+    background: var(--teal);
+}
+
+.burger.active .burger__line {
+    background: var(--teal);
+}
+
+.popup-link:hover {
+    color: var(--teal);
+}
+
+
+.footer-line {
+    background: var(--teal);
+}
+
+
+.footer-button {
+    background: var(--teal);
+}
+
+.filter {
+    background: var(--teal);
+}
