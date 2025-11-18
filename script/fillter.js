@@ -1,40 +1,27 @@
 
 document.querySelectorAll('.filter-option').forEach(button => {
   button.addEventListener('click', function () {
-
     this.classList.toggle('active');
   });
 });
-
 document.querySelector('.reset-btn').addEventListener('click', function () {
-
   document.querySelectorAll('.filter-option').forEach(button => {
     button.classList.remove('active');
   });
 });
-
 document.addEventListener('DOMContentLoaded', function () {
   const katalogWrap = document.querySelector('.katalog-wrap');
   const filterSection = document.querySelector('.filter');
-
   if (katalogWrap && filterSection) {
     katalogWrap.addEventListener('click', function () {
-
       filterSection.classList.toggle('filter-open');
-
-
       const arrow = this.querySelector('.katalog-img-arrow');
       if (arrow) {
         arrow.classList.toggle('rotate-180', filterSection.classList.contains('filter-open'));
       }
     });
   }
-
-
 });
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const catalogItems = document.querySelectorAll('.katalog-item');
   const filterOptions = document.querySelectorAll('.filter-option');

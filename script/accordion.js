@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     head.addEventListener('click', () => {
       const isOpen = accordion.classList.contains('open');
-
-
       accordions.forEach(item => {
         item.classList.remove('open');
       });

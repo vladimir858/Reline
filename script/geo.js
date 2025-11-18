@@ -4,30 +4,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuOverlay = document.getElementById('overlay');
     const headerTop = document.querySelector('.header__top');
     const body = document.body;
-
-
     const orderButton = document.querySelector('.button-link');
     const orderPopup = document.querySelector('.Order');
     const orderGeoPopup = document.querySelector('.Order-geo');
     const accPopup = document.querySelector('.acc');
-
-
     const orderYesBtn = orderPopup ? orderPopup.querySelector('.Order-btn--white') : null;
     const orderOtherBtn = orderPopup ? orderPopup.querySelector('.Order-btn--black') : null;
     const geoItems = orderGeoPopup ? orderGeoPopup.querySelectorAll('.geo-item-title') : null;
-
-
     const orderCloseBtn = orderPopup ? orderPopup.querySelector('.Order-close') : null;
     const orderGeoCloseBtn = orderGeoPopup ? orderGeoPopup.querySelector('.Order-close-geo') : null;
     const accCloseBtn = accPopup ? accPopup.querySelector('.acc-close-geo') : null;
-
-
     const modal = document.querySelector('.modal');
     const openModalBtns = document.querySelectorAll('[data-modal-open]');
     const closeModalBtns = document.querySelectorAll('[data-modal-close]');
-
-
-
 const headerBoxImg = document.querySelector('.header__box-img');
 const modalWindow = document.getElementById('1'); 
 
@@ -41,13 +30,10 @@ if (headerBoxImg && modalWindow) {
     if (!modalWindow) console.warn('Модальное окно с id="1" не найдено');
 }
 
-
-
     if (!menuOverlay) {
         console.error('Элемент #overlay не найден!');
         return;
     }
-
 
     function openPopup(popup) {
         if (!popup) return;
