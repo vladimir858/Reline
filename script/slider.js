@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const productCards = document.querySelectorAll('.product-card');
   const sliderTrack = document.querySelector('.slider-track');
 
-
   if (!slider || !prevBtn || !nextBtn || productCards.length === 0) {
     console.error('Один из элементов слайдера не найден!');
     return;
@@ -18,13 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
   let gap = 20;
   let resizeTimeout;
 
-
   function updateVisibleCards() {
     if (window.innerWidth <= 768) return 1;
     if (window.innerWidth <= 1250) return 2;
     return 3;
   }
-
 
   function updateCardWidth() {
     if (productCards.length === 0) return;
@@ -75,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const prevVisibleCards = visibleCards;
       visibleCards = updateVisibleCards();
 
-
       if (prevVisibleCards !== visibleCards) {
         const maxIndex = Math.max(0, Math.ceil(productCards.length / visibleCards) - 1);
         currentIndex = Math.min(currentIndex, maxIndex);
@@ -84,9 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
       updateCardWidth();
       slider.style.transition = 'none';
 
-
       slider.style.transform = `translateX(${-currentIndex * cardWidth * visibleCards}px)`;
-
 
       void slider.offsetWidth;
 
@@ -95,11 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 100);
   }
 
-
   function initSlider() {
     visibleCards = updateVisibleCards();
     updateCardWidth();
-
 
     slider.style.transition = 'none';
     slider.style.transform = `translateX(0px)`;
@@ -109,17 +101,14 @@ document.addEventListener('DOMContentLoaded', function () {
     updateButtons();
   }
 
-
   nextBtn.addEventListener('click', slideNext);
   prevBtn.addEventListener('click', slidePrev);
   window.addEventListener('resize', handleResize);
-
 
   slider.addEventListener('transitionend', () => {
     isAnimating = false;
     updateButtons();
   });
-
 
   initSlider();
 });
